@@ -1,0 +1,155 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorBackground"> <!-- Set background color -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/colorWhite"
+        android:elevation="4dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Finances"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Account Type:"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorBlack"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupAccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CD"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginRight="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginRight="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonChecking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking"
+                android:textColor="@color/colorBlack"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/darker_gray"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextInitialBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Initial Balance"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/darker_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editTextCurrentBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Balance"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/darker_gray"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Interest Rate"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/darker_gray"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextPaymentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Payment Amount"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/darker_gray"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="8dp" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
